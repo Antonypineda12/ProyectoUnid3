@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <title>Turismo Rey</title>
+    <link rel="stylesheet" href="css/estilo2.css">
+    <script src="validar.js" ></script>
+</head>
+<body>
+    
+        <div class="return">
+        <a href="index.html"><img src="img/voler1.jpg" style="float:right" alt=""></a>
+        </div>
+
+    <form action="enviarCorreo.php" method="POST" onsubmit="return validar();" >
+
+        <h2>Contactanos</h2>    
+        
+        <label><strong>Nombre:</strong></label>
+        <input type="text" id="nombre" name="nombre" placeholder="nombre" required>
+
+        <label><strong>Apellidos:</strong></label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="apellidos" required>
+
+        <label><strong>Email:</strong></label>
+        <input type="email" id="correo" name="correo" placeholder="correo" required >
+
+        <label><strong>Telefono:</strong></label>
+        <input type="text" id="telefono" name="telefono" placeholder="telefono" required>
+
+        <label><strong>Mensaje:</strong></label>
+        <textarea name="mensaje" id="mensaje" placeholder="escriba aqui su mensaje"  rows="6"></textarea>
+
+        <input type="submit" value="Enviar" id="boton">
+
+    </form>
+
+
+</body>
+</html>
